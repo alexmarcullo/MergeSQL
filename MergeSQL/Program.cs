@@ -31,7 +31,7 @@ namespace MergeSQL
             foreach (var file in files)
             {
                 var genSqlFile = new GenSqlFile(new FileInfo(file));
-                if (!genSqlFile.Name.Contains("_MERGED."))
+                if (!genSqlFile.Name.Contains("_MERGED"))
                 {
                     ls.Add(genSqlFile);
                     Log($"FILE FOUNDED => {genSqlFile.FileInfo.Name}");
